@@ -13,3 +13,9 @@ for directory in /opt/local/share/man /usr/games/man; do
 done
 unset directory
 # }}}
+
+# Handle local zshenv. {{{
+if [ -f ~/.zshenv-local ]; then
+    source ~/.zshenv-local
+fi
+# }}}
