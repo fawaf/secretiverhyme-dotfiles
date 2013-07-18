@@ -1,0 +1,3 @@
+OPTIONS=hilite_pet
+OPTIONS=color,menucolors
+OPTIONS=autopickup,pickup_types:$!/="+?
