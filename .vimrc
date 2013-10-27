@@ -43,6 +43,7 @@ set hidden
 set scrolloff=1
 
 " Miscellaneous.
+set number
 set showmatch
 autocmd FileType mail set nocin
 colo xoria256
