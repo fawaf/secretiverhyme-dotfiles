@@ -55,10 +55,9 @@ set mouse=a
 
 " MacVim/gVim-specific settings.
 if has("gui_running")
-    set guifont=Monaco:h9
+    colo mayansmoke
+    set guifont=Monaco:h11
     set guioptions-=T
-    set lines=50
-    set columns=100
     set foldcolumn=2
     set foldmethod=syntax
 endif
@@ -68,11 +67,3 @@ if version >= 701
     set modeline
     set modelines=5
 endif
-
-" LaTeX-Suite settings.  Assumes XeTeX on OS X.
-set grepprg=grep\ -nh\ $*
-let g:Tex_ViewRuleComplete_pdf = 'open -a Preview.app $*.pdf'
-let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_MultipleCompileFormats = 'pdf'
-let g:Tex_CompileRule_pdf = 'xelatex -interaction=nonstopmode $*'
-let g:tex_flavor='latex'
